@@ -1,0 +1,25 @@
+<script>
+    function calculateDiscountedPrice(regularPrice, discountedTotalAmount){
+      var discountAmount;
+      if(discountedTotalAmount<=200){
+          discountAmount=15
+      }
+      else if(discountedTotalAmount<=200 && discountedTotalAmount>=100){
+          discountAmount=10
+  
+      }
+      else if(discountedTotalAmount<=100 && discountedTotalAmount<=50){
+          discountAmount=5
+      }
+      var discountedPrice=regularPrice-(regularPrice*(discountAmount/100));
+      
+      return discountedPrice;
+  
+    
+  
+    }
+  
+   var regularPrice=180;
+   var result=(regularPrice)
+   document.write(result)
+  </script>
